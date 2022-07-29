@@ -1,0 +1,64 @@
+{
+  "name": "webgpu-playground",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@codemirror/stream-parser": "^0.19.2",
+    "@emotion/core": "^11.0.0",
+    "@radu/legacy-modes": "github:Sircoz/legacy-modes",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-native": "^0.65.9",
+    "@types/react-router-dom": "^5.3.1",
+    "@uiw/react-codemirror": "^4.2.4",
+    "@webgpu/types": "^0.1.6",
+    "bootstrap": "^5.1.1",
+    "react": "^17.0.2",
+    "react-arrows": "^1.2.0",
+    "react-bootstrap": "^2.0.0-rc.1",
+    "react-dom": "^17.0.2",
+    "react-horizontal-scrolling-menu": "^2.7.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
+    "react-scroll-horizontal": "^1.6.6",
+    "react-simple-star-rating": "^4.0.5",
+    "typescript": "^4.1.2",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12",
+    "web-vitals": "^1.0.1",
+    "webgpu": "^0.1.16"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-native": "^0.66.1"
+  }
+}

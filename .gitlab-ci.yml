@@ -1,0 +1,40 @@
+stages:
+  - build-app
+  - deploy-testing
+  - deploy-prod
+
+build_app:
+  stage: build-app
+  image: node:10
+  script: 
+    - echo "Start building App"
+    - npm install
+    - npm audit fix
+    - npm run build
+    - echo "Build successfully!"
+  artifacts:
+    paths:
+      - build
+      - node_modules/
+
+deploy_testing:
+  image: node:10
+  stage: deploy-testing
+  only:
+    - merge_requests
+  script:
+    - git push -f https://$HEROKU_USERNAME:$HEROKU_API_KEY@git.heroku.com/webgpu-playground-testing.git HEAD:master
+  environment:
+    name: testing
+    url: https://webgpu-playground-testing.herokuapp.com/
+
+deploy_prod:
+  image: node:10
+  stage: deploy-prod
+  only:
+    - master
+  script:
+    - git push -f https://$HEROKU_USERNAME:$HEROKU_API_KEY@git.heroku.com/webgpu-playground.git HEAD:master
+  environment:
+    name: production
+    url: https://webgpu-playground.herokuapp.com/

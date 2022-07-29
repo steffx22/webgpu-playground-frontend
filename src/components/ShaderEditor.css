@@ -1,0 +1,79 @@
+.modal-content{
+  background-color: rgb(43,48,53)!important;
+  border: 0px!important;
+  max-width: 50vw!important;
+  border-radius: 0%!important;
+  color: white!important;
+}
+
+.render-body {
+  border-left: 1px solid grey!important;
+  padding: 0!important;
+}
+
+.rating {
+  padding-bottom: 40px ;
+}
+
+.render-header {
+  border-left: 1px solid grey!important;
+  border-radius: 0%!important;
+}
+
+.modal-header{
+  border-bottom: 1px solid grey!important;
+}
+
+.code-window{
+  text-align: left;
+  padding: 0px;
+}
+
+.small-code-window{
+  text-align: left;
+  width: 25vw;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav {
+  align-items: center;
+}
+
+.ͼ1.cm-editor {
+  height: 60vh;
+}
+.ͼ1.cm-editor.cm-focused{
+  outline: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid grey!important;
+}
+
+.nav-tabs .nav-link{
+  color: grey!important;
+  border-radius: 0%!important;
+}
+
+.nav-tabs .nav-link.active{
+  color: white!important;
+  background-color: rgb(43,48,53)!important;
+  border-color: gray gray rgb(43,48,53)!important; 
+  border-radius: 0%!important;
+}
+.nav-pills .nav-link {
+  color: grey!important;
+  border-radius: 0%!important;
+}
+
+.nav-pills .nav-link.active{
+  color: white!important;
+  background-color: black!important;
+  border-color: gray!important; 
+  border-radius: 0%!important;
+}
+
+.btn-success {
+  margin: 0.75rem
+}
